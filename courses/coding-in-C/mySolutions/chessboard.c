@@ -9,14 +9,14 @@ int main(){
     for (int i=0; i<10; i ++){
        
         for (int j=0; j<8; j++){
-            if(1<i<9){
-                
+            if(i==0 && 0<j<9){
+                printf(" %c ", column[(j-1)]);
             }
             if ((i+j)%2==0){
                 printf("|##|");
 
             } else {
-                printf("  ");
+                printf("   ");
             }
             //printf("%c",column[j]);
             //printf("%d ",row[i]);
