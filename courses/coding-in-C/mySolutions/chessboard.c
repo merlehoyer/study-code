@@ -8,7 +8,7 @@ int main(){
     int iboardsize= 9;
 
 
-    for (int i=0; i<(iboardsize+7); i ++){
+    for (int i=0; i<(iboardsize+9); i ++){
        if(i%2==0){
         
         for (int j=0; j<iboardsize; j++){
