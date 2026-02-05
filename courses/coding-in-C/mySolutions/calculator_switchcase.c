@@ -55,13 +55,17 @@ int main(){
     
     switch(iChoiceOperant){
         case'+':
-         printf("%.2f + %.2f = %.2f\n",fNumber1, fNumber2, addition(fNumber1, fNumber2));
+            printf("%.2f + %.2f = %.2f\n",fNumber1, fNumber2, addition(fNumber1, fNumber2));
+            break;
         case '-':
-        subtract(fNumber1, fNumber2);
+            subtract(fNumber1, fNumber2);
+            break;
         case '/':
-        divide(fNumber1, fNumber2);
+            divide(fNumber1, fNumber2);
+            break;
         case 'x':
-        multiply(fNumber1, fNumber2);
+            multiply(fNumber1, fNumber2);
+            break;
 
         default:
         
