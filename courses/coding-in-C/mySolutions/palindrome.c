@@ -54,14 +54,19 @@ int main(){
         printf("%c",a_word[j]);
     } */
 
-    printf("chosen word (only lowercase): ");
-    fgets(a_word, sizeof(a_word), stdin);
+    printf("chosen word: ");
+    if(fgets(a_word, sizeof(a_word), stdin)!=NULL){
+
+    
 
     i_word_length = strcspn(a_word, "\n");
     a_word[i_word_length]='\0';
 
 
     checkingPalingdrome(pword, i_word_length);
+    }else{
+        printf("ungültige Eingabe");
+    }
     
     //printf("%s\n", a_word);
 
