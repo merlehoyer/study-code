@@ -42,6 +42,7 @@ int moving_particl(int *ptr_field, int*ptr_h_field, const int SIZE){
                     *(ptr_h_field+i-1)=1;
                 }else {
                     *(ptr_h_field+i-1)=0;
+                    printf("collision on Index %d\n", (i));
                 }
             }
 
