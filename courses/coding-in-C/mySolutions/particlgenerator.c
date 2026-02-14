@@ -12,7 +12,6 @@
  *
  * @param[in] ptr_field gives field array(Input)
  * @param[in] SIZE size of field
- * @param[out] param2 Explain parameter 2 (Output/Pointer)
  * @return            Explanation of return value
  */
 
@@ -49,6 +48,7 @@ int moving_particl(int *ptr_field, int*ptr_h_field, const int SIZE){
         }
     }
 
+    return 0;
 }
 
 int main(){
