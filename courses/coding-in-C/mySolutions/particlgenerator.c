@@ -49,14 +49,6 @@ int moving_particl(int *ptr_field, int*ptr_h_field, const int SIZE){
         }
     }
 
-    for(int j =0; j<SIZE; j++){
-        
-        *(ptr_field+j)=*(ptr_h_field+j);
-
-        printf("%d", *(ptr_field+j));
-    }
-    printf("\n");
-
 }
 
 int main(){
@@ -64,11 +56,14 @@ int main(){
     srand(time(NULL));
 
     int field[10];
+    int *p_field= field;
+    
     int help_field[10]={0};
     int *p_help_field= help_field;
+    
     const int FIELDSIZE=10;
-    int *p_field= field;
     int field_value=0;
+    int time_counter=0;
 
 
 
@@ -82,6 +77,9 @@ int main(){
     *(p_field+4)=1;
     *(p_field+6)=1;
 
+    printf("Time %d: ", time_counter);
+    time_counter++;
+
     for(int i=0; i<FIELDSIZE; i++){
 
        printf("%d", *(p_field+i));
@@ -93,6 +91,17 @@ int main(){
     while(field_value!=1){
         
         moving_particl(p_field, p_help_field, FIELDSIZE);
+
+        printf("Time %d: ", time_counter);
+
+        for(int j =0; j<FIELDSIZE; j++){
+        
+            *(p_field+j)=*(p_help_field+j);
+
+            printf("%d", *(p_field+j));
+        }
+        
+        printf("\n");
         
         field_value=0;
         
@@ -101,6 +110,7 @@ int main(){
         }
         
          //printf("\n%d", field_value);
+        time_counter++;
     }
     
   
