@@ -8,14 +8,14 @@
 #include <time.h>
 
 /**
- * @brief moves particls right or left
+ * @brief moves particles right or left
  *
  * @param[in] ptr_field gives field array(Input)
  * @param[in] SIZE size of field
  * @return            Explanation of return value
  */
 
-int moving_particl(int *ptr_field, int*ptr_h_field, const int SIZE){
+int moving_particle(int *ptr_field, int*ptr_h_field, const int SIZE){
 
     int moving_index=0;
     
@@ -91,7 +91,7 @@ int main(){
 
     while(field_value!=1){
         
-        moving_particl(p_field, p_help_field, FIELDSIZE);
+        moving_particle(p_field, p_help_field, FIELDSIZE);
 
         printf("Time %d: ", time_counter);
 
