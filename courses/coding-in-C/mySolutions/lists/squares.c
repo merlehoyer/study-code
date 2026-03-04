@@ -20,7 +20,7 @@ int main(){
         p_squares[i]= i*i;
         printf("%d ", *(p_squares+i));
     }
-
+    // muss eigentlich extra pointer weil bei fehler daten verluss realloc returns null
     p_squares= realloc(p_squares, (*N)*2*sizeof(*N));
 
     printf("\n");
