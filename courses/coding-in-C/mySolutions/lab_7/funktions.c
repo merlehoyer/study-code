@@ -54,17 +54,78 @@ int add_song(Playlist* curplaylist) {
 	}
 
 	Song* temp = curplaylist->p_first_song;
-
-	while (temp->p_next != NULL) {
-		temp = temp->p_next; 
-		// searches for end of playlist
+	
+	if(curplaylist->p_first_song==NULL){
+		curplaylist->p_first_song = new_song;
+		return 0;
 	}
 
-	temp->p_next = new_song;
+		while (temp->p_next != NULL) {
+			temp = temp->p_next; 
+		// searches for end of playlist
+		}
+
+		temp->p_next = new_song;
+
+	
 
 	return 0;
 }
 
-void print_playlist(Playlist* cur_playlist) {
+/**
+ * displays songs saved in playlist starting at the top
+ * param in: pointer to playlist 
+ * param out : none
+ */
 
+void print_playlist(Playlist* cur_playlist) {
+	Song *temp = cur_playlist->p_first_song;
+	
+	if(temp==NULL){
+		printf("empty playlist");
+	}
+	
+	while(temp!=NULL){
+		printf("Title: %s, Artist: %s\n", temp->title, temp->artist);
+		temp= temp->p_next;
+	}
+
+	
+	printf("----------\n");
+
+	return;
+}
+
+/**
+ * deletes first song in playlist
+ * param in : pointer to playlist
+ * param out: none
+ */
+
+void delete_firstSong(Playlist* cur_playlist){
+	Song *temp = cur_playlist->p_first_song;
+
+	cur_playlist->p_first_song=temp->p_next;
+
+	free(temp);
+
+	return;
+}
+
+/**
+ * deltetes whole playlist
+ * param in: pointer to playlist
+ * param out: none
+ */
+
+
+void delete_playlist(Playlist* cur_playlist){
+	
+	while(cur_playlist->p_first_song!=NULL){
+		delete_firstSong(cur_playlist);
+	}
+
+	free(cur_playlist);
+
+	return;
 }

@@ -13,7 +13,7 @@ typedef struct Playlist {
 
 Playlist* init_playlist();
 
-void add_song(Playlist* cur_playlist);
+int add_song(Playlist* cur_playlist);
 
 void print_playlist(Playlist* cur_playlist);
 
