@@ -1,4 +1,4 @@
-#include "functions_playlist.h"
+#include "../include/functions_playlist.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -12,6 +12,7 @@ struct Playlist *init_playlist(){
     }else{
         playlist->p_first=NULL;
         playlist->p_last=NULL;
+        playlist->counter=0;
     }
 
     return playlist;
@@ -20,6 +21,10 @@ struct Playlist *init_playlist(){
 int add_Song(struct Playlist *cur_playlist){
 
     //check return value for 0!!!!!
+    if(cur_playlist->counter>=MAX_SONGS){
+        printf("reached max songs in playlist\n");
+        return 1;
+    }
 
     struct Song *new_song = malloc(sizeof(*new_song));
 
@@ -55,6 +60,8 @@ int add_Song(struct Playlist *cur_playlist){
         cur_playlist->p_last= new_song;
     }
 
+    cur_playlist->counter +=1;
+
     return 0;
 }
 
@@ -83,6 +90,7 @@ void delete_firstSong(struct Playlist *cur_playlist){
         struct Song *temp = cur_playlist->p_first; 
         cur_playlist->p_first= temp->p_next;
         free(temp);
+        cur_playlist->counter-=1;
     }
 
     return;

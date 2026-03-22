@@ -1,16 +1,20 @@
 #ifndef FUNCTIONS_PLAYLIST_H
 #define FUNCTIONSPLAYLIST_H
-struct Song{
+
+#define MAX_SONGS 6
+
+typedef struct Song{
     char *title;
     char *artist;
 
     struct Song *p_next;
 
-} ;
+}Song ;
 
 struct Playlist{
-    struct Song *p_first;
-    struct Song *p_last;
+    int counter;
+    Song *p_first;
+    Song *p_last;
 };
 
 struct Playlist *init_playlist();
