@@ -44,8 +44,8 @@ Use names that describe purpose clearly.
 
 ### Rules
 
-- **Variables and parameters:** `lower_snake_case` or `camelCase`
-- **Functions / methods:** `lower_snake_case` or `camelCase`, preferably verbs
+- **Variables / parameters:** `lower_snake_case` or `camelCase`
+- **Functions / methods / namespaces:** `lower_snake_case` or `camelCase`, preferably verbs
 - **Constants:** `UPPER_SNAKE_CASE`
 - **Classes / structs / enums:** `PascalCase`
 - **Pointers:** start with __p___ or __ptr___
