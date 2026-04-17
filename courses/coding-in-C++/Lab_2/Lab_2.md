@@ -233,9 +233,8 @@ A cinema manages movies, customers, and tickets.
 - The total number of created tickets should be tracked.
 - The final ticket price depends on the movie price.
 
----
 
-## Tasks
+### Tasks
 
 1. Model the described system in an UML class diagram in drawIO.
 
@@ -251,3 +250,61 @@ A cinema manages movies, customers, and tickets.
      - one method **without parameters**
    - Mark appropriate methods with `{query}`
    - Use the direction for parameters
+
+## 🟡 Section V: Search Engine
+
+In this section, you will create a simplified **Search Engine System** including UML diagrams and C++ code.
+
+---
+
+### 📘 System Description
+
+A search engine allows users to enter a textual query in order to find relevant web content.
+
+Each searchable item in the system represents a web resource.  
+Such a resource has a unique address, contains textual information, and has an internal ranking value that indicates how relevant or important it is.  
+Some values are not stored directly but can be derived, for example whether a resource is considered “popular” based on its ranking.
+
+Users interact with the system by entering search queries.  
+A query consists of a text input and may define a maximum number of results that should be returned.  
+It should be possible to check whether a query is valid (e.g. not empty).
+
+The system itself processes queries and keeps track of usage statistics.  
+For example, it may count how many queries have been executed in total.  
+Additionally, the system should be able to output basic information about itself.
+
+Each component of the system should provide meaningful functionality, such as:
+
+- displaying its internal state in a readable format  
+- checking conditions without modifying internal data  
+- processing input parameters where appropriate  
+
+---
+
+### Tasks: Part I
+
+- Create an **UML class diagram** for the described system
+- You must **identify all necessary classes yourself**  
+- Decide which elements are:
+  - **attributes**
+  - **methods (operations)**  
+- Include:
+  - visibility (`+`, `-`)  
+  - data types  
+  - return types  
+  - parameters including direction
+  - mark readonly methods as `{query}`  
+
+- Your diagram must contain at least:
+  - one **static attribute**  
+  - one **derived attribute**  
+
+🚫 Do **not** model relationships between classes in this task.
+
+### Tasks: Part II
+
+- Based on your UML diagram, implement the Search Engine system in C++
+- The code should reflect exactly your UML architecture
+- The code should consider OOP best-practices such as abstraction and encapsulation
+- Write a main-function and creates real objects of each class and tests each method
+- Create an **UML object diagram** that shows one concrete snapshot of your system at runtime
