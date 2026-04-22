@@ -204,7 +204,7 @@ Recorded data:
 
 #### Requirements
 
-- Create a `std::vector<int>` with some values of your choice
+- Use one of the previously created `std::vector<int>` vectors
 - Loop over each element of the vector one by one using an explicit iterator 
 - Print all elements
 

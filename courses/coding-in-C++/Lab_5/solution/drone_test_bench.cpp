@@ -63,5 +63,29 @@ int main()
     std::reverse(recordedData2.begin(), recordedData2.end());
     printVector(recordedData2);
 
+    // Task 8
+    std::cout << '\n'
+              << "-------------Task 8-------------" << '\n';
+
+    std::vector<int>::iterator iter;
+
+    for (iter = recordedData2.begin(); iter != recordedData2.end(); ++iter)
+    {
+        std::cout << *iter << '\n';
+    }
+
+    // What does *it do?
+    // Similar to the dereferencing of pointer, this operators allows
+    // to read/access the element the iterator is pointing to.
+
+    // What does ++iter do?
+    // The ++ operator moves the iterator to the next element of the container.
+    // It is usually used a prefix operator because it is more efficient.
+    // In case of postfix operator, a temporary iterator would be created
+    // storing the previous element until the end of the loop iteration
+
+    // Section III
+    // Task 9
+
     return 0;
 }
