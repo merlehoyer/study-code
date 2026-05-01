@@ -31,7 +31,7 @@ The class should support common mathematical operations such as vector addition,
 
 ---
 
-### Part 1 – Basic Class
+### 🟢 Part 1 – Basic Class
 
 Create a class called Vector2D which contains:
 1. **x** and **y** coordinates (type: double)
@@ -42,7 +42,7 @@ Create a class called Vector2D which contains:
 
 ---
 
-### Part 2 – Function Overloading
+### 🟢 Part 2 – Function Overloading
 
 Implement a method that computes the length (magnitude) of the vector.
 
@@ -58,7 +58,7 @@ Use the ```round``` function of ```<cmath>``` for this purpose:
 
 ---
 
-### Part 3 – Operator Overloading
+### 🟡 Part 3 – Operator Overloading
 
 Implement operator overloading for basic vector operations.
 
@@ -66,8 +66,8 @@ Your class should support:
 
 - adding two vectors
 - adding another vector to the current object (+=)
-- print a vector using standard output streams
 - scalar multiplication in both orders (vector * scalar and scalar * vector)
+- print a vector using standard output streams
 
 Test all operators in `main`
 
@@ -86,7 +86,7 @@ Enable comparison between two vectors.
 - Test the comparison operators in the main function
 
 Consider the challenges of comparing floating-point values
----
+
 
 ## 🟢 Section II: Introduction to dynamic Polymorphism
 
