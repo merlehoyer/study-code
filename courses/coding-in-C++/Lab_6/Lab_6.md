@@ -57,7 +57,7 @@ The system should use exceptions to detect and handle these exceptional situatio
 
 ---
 
-## Part 1 – Simple: Standard Exceptions
+## 🟢 Part 1: Standard Exceptions
 
 Create a class `Sensor`.
 
