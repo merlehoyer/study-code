@@ -8,7 +8,180 @@ This lab focuses on applying the knowledge of process models as well as helps yo
 
 🔴 __Complex__: A more demanding or longer software engineering activity that requires you to combine concepts, make decisions as a team, and work through a broader project context. Such tasks might take up to a few hours to complete.
 
-## 🟢 Section I: Agile Principles
+## 🟡 Section I: Software Development Process Models
+
+In this exercise, you will practice applying different software development process models. The tasks cover the Software Development Life Cycle (SDLC), Waterfall Model, V-Model, iterative and incremental development, and the Spiral Model.
+
+Work individually or in pairs.
+
+### Task Description
+
+A university wants to develop a new Campus Mobility App.
+
+The application should help students travel between different university locations. Users should be able to:
+
+* View available university shuttle buses
+* See current departure and arrival times
+* Search for connections between university locations
+* Receive notifications about delays
+* Save frequently used connections as favorites
+
+The university plans to add additional functionality in the future, such as bicycle sharing, public transport integration, and parking information.
+
+Use this system as the basis for the following tasks.
+
+#### 1. Software Development Life Cycle
+
+Consider the following activities:
+
+* A. Developers implement the connection search algorithm.
+* B. Students test whether the application satisfies their expectations.
+* C. The project team determines what functionality students need.
+* D. The application is released to the university app store.
+* E. Software architects define the components and interfaces of the system.
+* F. Developers fix defects and adapt the application after its release.
+* G. Testers check whether the complete application fulfills its specified requirements.
+
+Assign each activity to an appropriate phase of the Software Development Life Cycle (SDLC).
+
+Put the activities into a reasonable order.
+
+Name one typical artifact that could be created during each of the following activities:
+
+* Requirements Engineering
+* Design
+* Implementation
+* Testing
+
+#### 2. Waterfall Model
+
+Assume that the university decides to develop the complete Campus Mobility App using the Waterfall Model.
+
+Draw a simplified Waterfall Model and assign the major development activities to its phases.
+
+Explain why the Waterfall Model could work well if the requirements of the university are stable and well understood.
+
+After implementation has already started, the university requests integration with the local public transport provider.
+
+Explain why this change can be problematic when using the Waterfall Model.
+
+Name two potential advantages and two potential disadvantages of using the Waterfall Model for this project.
+
+#### 3. V-Model
+
+The project team decides that testing should be planned systematically together with the development activities.
+
+Consider the following development activities:
+
+* Requirements Specification
+* System Design
+* Software / Component Design
+* Implementation
+
+and the following test levels:
+
+* Unit Testing
+* Integration Testing
+* System Testing
+* Acceptance Testing
+
+Draw a simplified V-Model containing these activities.
+
+Assign each test level to the corresponding development activity.
+
+Briefly explain what the connection between the two sides of the V represents.
+
+#### 4. Iterative and Incremental Development
+
+Instead of delivering the complete application at once, the development team considers developing it incrementally.
+
+Assume the following functionality:
+
+* Shuttle timetable
+* Connection search
+* Delay notifications
+* Favorites
+* Bicycle sharing
+* Public transport integration
+* Parking information
+
+Divide the functionality into three meaningful increments.
+
+Each increment should provide a usable extension of the system.
+
+Explain why your first increment is already useful to students.
+
+Explain the difference between an increment and an iteration.
+
+Consider the connection search feature. During development, it evolves as follows:
+
+* Version 1: Search between two university locations
+* Version 2: Search considers current shuttle delays
+* Version 3: Search combines shuttle buses and public transport
+
+Is this primarily an example of iterative or incremental development? Explain your answer.
+
+#### 5. Spiral Model
+
+A new requirement is introduced:
+
+In the future, the Campus Mobility App should automatically predict shuttle delays using live GPS data and machine learning.
+
+The development team has never implemented such a prediction system before. It is unclear whether the available GPS data is accurate enough to produce useful predictions.
+
+Explain why the Spiral Model could be suitable for developing this functionality.
+
+Identify two project risks associated with the new functionality.
+
+Describe how the team could investigate one of these risks during an early spiral.
+
+Name and briefly explain the major activities that are typically performed during one cycle of the Spiral Model.
+
+#### 6. Identify the Process Model
+
+For each of the following projects, identify the process model that is described.
+
+Choose from:
+
+* Waterfall Model
+* V-Model
+* Iterative / Incremental Development
+* Spiral Model
+
+**Scenario A**
+
+A medical software company defines the system requirements and architecture before implementation begins. For every specification level, a corresponding test level is planned. The relationship between development artifacts and tests must be documented.
+
+**Scenario B**
+
+A startup develops an application whose requirements are expected to change frequently. A small but usable version is released first. Additional functionality is added in subsequent releases while existing functionality is continuously improved.
+
+**Scenario C**
+
+A company develops an experimental autonomous robot. Several important technologies have never been used by the company before. During development, prototypes are created specifically to investigate technical risks before committing to the final architecture.
+
+**Scenario D**
+
+A customer provides a detailed and stable specification at the beginning of a project. Requirements, design, implementation, testing, and deployment are performed largely sequentially.
+
+For each scenario:
+
+* Identify the most appropriate process model
+* Name one characteristic from the scenario that supports your answer
+
+#### 7. Final Comparison
+
+Complete the following table.
+
+| Characteristic | Waterfall | V-Model | Iterative / Incremental | Spiral |
+| --- | --- | --- | --- | --- |
+| Development mainly sequential? | | | | |
+| Explicit relationship between development and testing? | | | | |
+| Early delivery of partial functionality possible? | | | | |
+| Explicit focus on risk analysis? | | | | |
+| Well suited to changing requirements? | | | | |
+
+## 🟢 Section II: Agile Principles
 
 ### Task Description
 
@@ -44,7 +217,7 @@ The presentation should explain:
 
 No need to prepare slides for this presentation. A short oral explanation is sufficient.
 
-## 🟡 Section II: Scrum Paper Airplane Game
+## 🟡 Section III: Scrum Paper Airplane Game
 
 In this exercise, you will play a short agile game to practice working in sprints.
 The goal is to experience planning, time-boxed implementation, testing, review, and retrospective improvement in a simple physical activity.
@@ -136,7 +309,7 @@ The presentation should explain:
 
 No slides are required. A short oral explanation is sufficient.
 
-## 🟢 Section III: Writing and Refining Requirements
+## 🟢 Section IV: Writing and Refining Requirements
 
 ### Task Description
 
@@ -186,7 +359,7 @@ The presentation should explain:
 No need to prepare slides for this presentation. A short oral explanation is sufficient.
 
 
-## 🟢 Section IV: Getting Started with Enterprise Architect
+## 🟢 Section V: Getting Started with Enterprise Architect
 
 In this short exercise, you will get familiar with Enterprise Architect as a tool for documenting requirements.
 The goal is to explore the interface, create one or two simple requirements, and notice which features could support requirements engineering work.
@@ -210,7 +383,7 @@ Focus especially on:
 
 #### 2. Create Requirements
 
-Create one or two requirements for the alarm-clock application from Section III.
+Create one or two requirements for the alarm-clock application from Section IV.
 
 For each requirement:
 
@@ -220,7 +393,7 @@ For each requirement:
 * Save it in a suitable package or model structure
 
 
-## 🟢 Section V: Getting Started with GitLab Issues
+## 🟢 Section VI: Getting Started with GitLab Issues
 
 In this short exercise, you will get familiar with GitLab Issues as a lightweight tool for documenting and discussing requirements.
 The goal is to explore the issue interface, create one or two simple requirements, and notice which features could support requirements engineering work.
@@ -244,7 +417,7 @@ Focus especially on:
 
 #### 2. Create Requirements
 
-Create one or two issues for requirements of the alarm-clock application from Section III.
+Create one or two issues for requirements of the alarm-clock application from Section IV.
 
 For each issue:
 
@@ -254,7 +427,7 @@ For each issue:
 * Add a suitable label if labels are available in your project
 
 
-## 🔴 Section VI: Scrum Backlog Refinement Game
+## 🔴 Section VII: Scrum Backlog Refinement Game
 
 In this exercise, you will practice several Scrum-related activities by working with an unclear product vision and an unfinished initial backlog.
 You will create backlog items in GitLab or GitHub, take turns acting as Product Owner and Developers, improve backlog items, discuss uncertainty, and estimate work using planning poker.
